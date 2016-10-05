@@ -345,6 +345,19 @@ exports.Formats = [
 		ruleset: ['Team Preview', 'Cancel Mod'],
 	},
 
+	// Tsunami Metagames
+	///////////////////////////////////////////////////////////////////
+
+	{
+		name: "Tsumeta (BETA)",
+		desc: ["Desc coming soon."],
+		section: "Tsunami Metagames",
+		column: 2,
+
+		mod: 'tsumeta',
+		ruleset: ['OU']
+	},
+
 	// Other Metagames
 	///////////////////////////////////////////////////////////////////
 
