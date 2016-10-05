@@ -46,16 +46,17 @@ exports.BattleMovedex = {
             boosts: {def: -1, spd: -1, spe: -1}
         }
     },
-    "extremespeed": {
+    "extremespeed": { //FAILED TO WORK
         inherit: true,
         onTryHit: function (target) {
-            let broke = false;
-            for (let i in {kingsshield:1, protect:1, spikyshield:1}) {
-                if (target.removeVolatile(i)) broke = true;
-            }
-            let chance = Math.round(Math.random() * 99);
-            if (broke && chance < 30) {
-                this.add('-activate', target, 'move: Extreme Speed', '[broken]');
+            if (Math.floor(Math.random()*99) < 30) {
+              let broke = false;
+              for (let i in {kingsshield:1, protect:1, spikyshield:1}) {
+                  if (target.removeVolatile(i)) broke = true;
+                }
+                if (broke) {
+                  this.add('-activate', target, 'move: Extreme Speed', '[broken]');
+                }
             }
         },
     },
