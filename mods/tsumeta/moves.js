@@ -48,7 +48,7 @@ exports.BattleMovedex = {
     },
     "extremespeed": { //FAILED TO WORK
         inherit: true,
-        onTryHit: function (target) {
+       /* onTryHit: function (target) {
             if (Math.floor(Math.random()*99) < 30) {
               let broke = false;
               for (let i in {kingsshield:1, protect:1, spikyshield:1}) {
@@ -58,7 +58,12 @@ exports.BattleMovedex = {
                   this.add('-activate', target, 'move: Extreme Speed', '[broken]');
                 }
             }
-        },
+        }, */
+        breaksProtection: true,
+        chance: 30,
+        if (move.id === 'Detect') {
+            breaksProtection = false
+        }
     },
     "toxic": {
         inherit: true,
