@@ -62,7 +62,7 @@ exports.BattleMovedex = {
         onTryHit: function (target) {
             if (Math.floor(Math.random()*99) < 30) {
         breaksProtection: true,
-            }
+            },
         if (target.move.id === 'Detect') {
             breaksProtection = false
         }
