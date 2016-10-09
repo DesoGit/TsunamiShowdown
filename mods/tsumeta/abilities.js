@@ -25,10 +25,10 @@ exports.BattleAbilities = {
             this.add('-start', target, 'ability: Gluttony');
           },
           onModifySpe: function (spe, pokemon) {
-    				return this.chainModify(0.33);
+    				return this.chainModify(0.66);
     			},
 		onModifyAtk: function (atk, pokemon) {
-			return this.chainModify(0.33);
+			return this.chainModify(0.66);
 		},
           onModifyAtkPriority: 6,
     		  onSourceModifyAtk: function (atk, attacker, defender, move) {
