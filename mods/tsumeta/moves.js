@@ -59,10 +59,12 @@ exports.BattleMovedex = {
                 }
             }
         }, */
+        onTryHit: function (target) {
         breaksProtection: true,
         chance: 30,
-        if (move.id === 'Detect') {
+        if (target.move.id === 'Detect') {
             breaksProtection = false
+        }
         }
     },
     "toxic": {
