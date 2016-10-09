@@ -27,6 +27,9 @@ exports.BattleAbilities = {
           onModifySpe: function (spe, pokemon) {
     				return this.chainModify(0.33);
     			},
+		onModifyAtk: function (atk, pokemon) {
+			return this.chainModify(0.33);
+		},
           onModifyAtkPriority: 6,
     		  onSourceModifyAtk: function (atk, attacker, defender, move) {
     			  if (move.type === 'Ice' || move.type === 'Fire') {
