@@ -18,6 +18,7 @@ exports.BattleAbilities = {
         inherit: true,
         onEatItem: function (item, pokemon) {
             if (!pokemon.volatiles['gluttony']) pokemon.addVolatile('gluttony');
+		if item.isBerry = true onEat = onEat * 2;
         },
         effect: {
           duration: 2,
