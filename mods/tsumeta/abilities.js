@@ -19,7 +19,8 @@ exports.BattleAbilities = {
         onEatItem: function (item, pokemon) {
             if (!pokemon.volatiles['gluttony']) pokemon.addVolatile('gluttony');
 		//if item.isBerry = true onEat = onEat * 2; --Failed one-line rendition
-		if (item.id === 'sitrusberry') {
+		
+		/*if (item.id === 'sitrusberry') { //yikes to all of this
 			this.heal(pokemon.maxhp / 2);
 		}
 		if (item.id === 'oranberry') {
@@ -112,7 +113,50 @@ exports.BattleAbilities = {
 		if (item.id === 'habiriberry') {
 			inherit: true,
 			return this.chainModify(0.25);
-		}
+		}*/
+		
+
+switch (item.id) {
+    case 'sitrusberry':
+        this.heal(pokemon.maxhp / 2);
+        break;
+
+    case 'oranberry':
+        this.heal(pokemon.maxhp + 20);
+        break;
+
+    case 'figyberry':
+    case 'wikiberry':
+    case 'magoberry':
+    case 'iapapaberry':
+    case 'aguavberry':
+        inherit: true,
+            this.heal(pokemon.maxhp / 4);
+        break;
+
+    case 'occaberry':
+    case 'passhoberry':
+    case 'wacanberry':
+    case 'rindoberry':
+    case 'yacheberry':
+    case 'chopleberry':
+    case 'kebiaberry':
+    case 'shucaberry':
+    case 'cobaberry':
+    case 'payapaberry':
+    case 'tangaberry':
+    case 'chartiberry':
+    case 'chilaberry':
+    case 'kasibberry':
+    case 'habanberry':
+    case 'colburberry':
+    case 'habiriberry':
+        inherit: true,
+            return this.chainModify(0.25);
+        break;
+}
+
+
 		
         },
         effect: {
