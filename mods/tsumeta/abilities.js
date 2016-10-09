@@ -130,7 +130,7 @@ switch (item.id) {
     case 'magoberry':
     case 'iapapaberry':
     case 'aguavberry':
-        inherit: true,
+        //inherit: true,
             this.heal(pokemon.maxhp / 4);
         break;
 
@@ -151,7 +151,7 @@ switch (item.id) {
     case 'habanberry':
     case 'colburberry':
     case 'habiriberry':
-        inherit: true,
+        //inherit: true,
             return this.chainModify(0.25);
         break;
 }
