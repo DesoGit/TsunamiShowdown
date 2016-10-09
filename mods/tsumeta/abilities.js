@@ -45,7 +45,7 @@ exports.BattleAbilities = {
 			inherit: true,
 			this.heal(pokemon.maxhp / 4);
 		}
-		if item.id === 'occaberry' {
+		if (item.id === 'occaberry') {
 			inherit: true,
 			return this.chainModify(0.25);
 		}
