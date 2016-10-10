@@ -160,7 +160,7 @@ exports.BattleItems = {
 			return this.chainModify(0.25);
 		}
     },
- "habiriberry": 
+ "babiriberry": 
     function (pokemon, ability, item) {
 		if (pokemon.ability === 'gluttony') {
 			inherit: true,
