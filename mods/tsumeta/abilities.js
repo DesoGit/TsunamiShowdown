@@ -58,23 +58,23 @@ switch (item.id) {
     case 'colburberry':
     case 'habiriberry':
         //inherit: true,
-		if (typeSupressantBerries.indexOf('occaberry') > -1 { return this.chainModify(0.25);}
-		if (typeSupressantBerries.indexOf('passhoberry') > -1 { return this.chainModify(0.25);}
-	    	if (typeSupressantBerries.indexOf('wacanberry') > -1 { return this.chainModify(0.25);}
-		if (typeSupressantBerries.indexOf('rindoberry') > -1 { return this.chainModify(0.25);}
-		if (typeSupressantBerries.indexOf('yacheberry') > -1 { return this.chainModify(0.25);}
-		if (typeSupressantBerries.indexOf('chopleberry') > -1 { return this.chainModify(0.25);}
-		if (typeSupressantBerries.indexOf('kebiaberry') > -1 { return this.chainModify(0.25);}
-		if (typeSupressantBerries.indexOf('shucaberry') > -1 { return this.chainModify(0.25);}
-		if (typeSupressantBerries.indexOf('cobaberry') > -1 { return this.chainModify(0.25);}
-		if (typeSupressantBerries.indexOf('payapaberry') > -1 { return this.chainModify(0.25);}
-		if (typeSupressantBerries.indexOf('tangaberry') > -1 { return this.chainModify(0.25);}
-		if (typeSupressantBerries.indexOf('chartiberry') > -1 { return this.chainModify(0.25);}
-		if (typeSupressantBerries.indexOf('chilanberry') > -1 { return this.chainModify(0.25);}
-		if (typeSupressantBerries.indexOf('kasibberry') > -1 { return this.chainModify(0.25);}
-		if (typeSupressantBerries.indexOf('habanberry') > -1 { return this.chainModify(0.25);}
-		if (typeSupressantBerries.indexOf('colburberry') > -1 { return this.chainModify(0.25);}
-		if (typeSupressantBerries.indexOf('habiriberry') > -1 { return this.chainModify(0.25);}
+		if (typeSupressantBerries.indexOf('occaberry') > -1) { return this.chainModify(0.25);}
+		if (typeSupressantBerries.indexOf('passhoberry') > -1) { return this.chainModify(0.25);}
+	    	if (typeSupressantBerries.indexOf('wacanberry') > -1) { return this.chainModify(0.25);}
+		if (typeSupressantBerries.indexOf('rindoberry') > -1) { return this.chainModify(0.25);}
+		if (typeSupressantBerries.indexOf('yacheberry') > -1) { return this.chainModify(0.25);}
+		if (typeSupressantBerries.indexOf('chopleberry') > -1) { return this.chainModify(0.25);}
+		if (typeSupressantBerries.indexOf('kebiaberry') > -1) { return this.chainModify(0.25);}
+		if (typeSupressantBerries.indexOf('shucaberry') > -1) { return this.chainModify(0.25);}
+		if (typeSupressantBerries.indexOf('cobaberry') > -1) { return this.chainModify(0.25);}
+		if (typeSupressantBerries.indexOf('payapaberry') > -1) { return this.chainModify(0.25);}
+		if (typeSupressantBerries.indexOf('tangaberry') > -1) { return this.chainModify(0.25);}
+		if (typeSupressantBerries.indexOf('chartiberry') > -1) { return this.chainModify(0.25);}
+		if (typeSupressantBerries.indexOf('chilanberry') > -1) { return this.chainModify(0.25);}
+		if (typeSupressantBerries.indexOf('kasibberry') > -1) { return this.chainModify(0.25);}
+		if (typeSupressantBerries.indexOf('habanberry') > -1) { return this.chainModify(0.25);}
+		if (typeSupressantBerries.indexOf('colburberry') > -1) { return this.chainModify(0.25);}
+		if (typeSupressantBerries.indexOf('habiriberry') > -1) { return this.chainModify(0.25);}
         break;
 	/*case 'custapberry':
 		if (!pokemon.volatiles['custap']) pokemon.addVolatile('custap');
