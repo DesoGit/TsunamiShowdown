@@ -1,6 +1,6 @@
 'use strict';
 
-var scanIfBerry = item.isBerry;
+//var scanIfBerry = item.isBerry;
 var typeSuppressantBerries = ['occaberry','wacanberry','passhoberry','chilanberry','chopleberry','yacheberry','rindoberry','kasibberry','kebiaberry','shucaberry','cobaberry','chartiberry','tangaberry','payapaberry','habanberry','colburberry','habiriberry'];
 
 
