@@ -1,7 +1,7 @@
 'use strict';
 
 //var scanIfBerry = item.isBerry;
-var typeSuppressantBerries = ['occaberry','wacanberry','passhoberry','chilanberry','chopleberry','yacheberry','rindoberry','kasibberry','kebiaberry','shucaberry','cobaberry','chartiberry','tangaberry','payapaberry','habanberry','colburberry','habiriberry'];
+var typeSuppressantBerries = ['occaberry','wacanberry','passhoberry','chilanberry','chopleberry','yacheberry','rindoberry','kasibberry','kebiaberry','shucaberry','cobaberry','chartiberry','tangaberry','payapaberry','habanberry','colburberry','babiriberry'];
 
 
 exports.BattleAbilities = {
@@ -56,7 +56,7 @@ switch (item.id) {
     case 'kasibberry':
     case 'habanberry':
     case 'colburberry':
-    case 'habiriberry':
+    case 'babiriberry':
         //inherit: true,
 		if (typeSuppressantBerries.indexOf('occaberry') > -1) { return this.chainModify(0.25);}
 		if (typeSuppressantBerries.indexOf('passhoberry') > -1) { return this.chainModify(0.25);}
@@ -74,7 +74,7 @@ switch (item.id) {
 		if (typeSuppressantBerries.indexOf('kasibberry') > -1) { return this.chainModify(0.25);}
 		if (typeSuppressantBerries.indexOf('habanberry') > -1) { return this.chainModify(0.25);}
 		if (typeSuppressantBerries.indexOf('colburberry') > -1) { return this.chainModify(0.25);}
-		if (typeSuppressantBerries.indexOf('habiriberry') > -1) { return this.chainModify(0.25);}
+		if (typeSuppressantBerries.indexOf('babiriberry') > -1) { return this.chainModify(0.25);}
         break;
 	/*case 'custapberry':
 		if (!pokemon.volatiles['custap']) pokemon.addVolatile('custap');
