@@ -1,11 +1,13 @@
 'use strict';
 
-var typeSupBer_Val = function (pokemon, ability, item) 
-if (array.includes('occaberry','wacanberry','passhoberry','chilanberry','chopleberry','yacheberry','rindoberry','kasibberry','kebiaberry','shucaberry','cobaberry','chartiberry','tangaberry','payapaberry','habanberry','colburberry','babiriberry') && pokemon.ability === 'gluttony' { //typeSuppressantBerries.indexOf 
-			typeSupBer_Val = 0.25 } else { typeSupBer_Val = 0.5
-    }
-    var typeSuppressantBerries = ['occaberry','wacanberry','passhoberry','chilanberry','chopleberry','yacheberry','rindoberry','kasibberry','kebiaberry','shucaberry','cobaberry','chartiberry','tangaberry','payapaberry','habanberry','colburberry','babiriberry'];
-
+var typeSuppressantBerries = ['occaberry','wacanberry','passhoberry','chilanberry','chopleberry','yacheberry','rindoberry','kasibberry','kebiaberry','shucaberry','cobaberry','chartiberry','tangaberry','payapaberry','habanberry','colburberry','babiriberry'];
+function typeSupBer_Val (pokemon, ability, item) {
+	if (typeSuppresantBerries.indexOf(item.id) > -1 && pokemon.ability === 'gluttony') {
+		return 0.25;
+	} else {
+		return 0.5;
+	}
+}
 exports.BattleItems = {
  "sitrusberry": 
     function (pokemon, ability, item) {
