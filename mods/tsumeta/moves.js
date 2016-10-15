@@ -59,7 +59,7 @@ exports.BattleMovedex = {
                 }
             }
         }, */
-        onTryHit: function (pokemon, target, move) {
+        onBeforeHit: function (pokemon, target, move) {
             if (move.id === 'detect') {
                 this.breaksProtect = false;
             } else {
