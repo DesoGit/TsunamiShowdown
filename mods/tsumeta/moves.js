@@ -59,16 +59,15 @@ exports.BattleMovedex = {
                 }
             }
         }, */
-        onTryHit: function (target) {
-                    if (target.move.id === 'Detect') {
-            breaksProtect = false;
-        }
-            else {
-            if (Math.floor(Math.random()*99) < 30) {
-        breaksProtect: true;
+        onTryHit: function (pokemon, target, move) {
+            if (move.id === 'detect') {
+                this.breaksProtect = false;
+            } else {
+                if (Math.floor(Math.random()*99) < 30) {
+                    this.breaksProtect = true;
+                }
             }
-            }
-        }
+        },
     },
     "toxic": {
         inherit: true,
