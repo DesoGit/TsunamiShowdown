@@ -60,12 +60,14 @@ exports.BattleMovedex = {
             }
         }, */
         onTryHit: function (target) {
+                    if (target.move.id === 'Detect') {
+            breaksProtect = false,
+        }
+            else {
             if (Math.floor(Math.random()*99) < 30) {
         breaksProtect: true,
             }
-        if (target.move.id === 'Detect') {
-            breaksProtect = false,
-        }
+            }
         }
     },
     "toxic": {
