@@ -140,11 +140,11 @@ exports.commands = {
 	wallet: function (target, room, user) {
 		if (!this.runBroadcast()) return;
 		if (!target) target = user.name;
-		let targetUser = Users(target);
+		let targetUser = Users(toId(target));
 
 		const amount = Db('money').get(toId(target), 0);
 		let group = user.getIdentity().charAt(0);
-		this.sendReplyBox("<font color=#948A88>" + group +  "</font><font color=" + color(targetUser.userid) + "><b>" + Tools.escapeHTML(target) + "</b></font> has " + amount + currencyName(amount) + ".");
+		this.sendReplyBox("<font color=#948A88>" + targetUser.group +  "</font><font color=" + color(targetUser.userid) + "><b>" + Tools.escapeHTML(target) + "</b></font> has " + amount + currencyName(amount) + ".");
 	},
 	wallethelp: ["/wallet [user] - Shows the amount of money a user has."],
 
