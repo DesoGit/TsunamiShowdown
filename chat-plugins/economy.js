@@ -143,7 +143,7 @@ exports.commands = {
 		let targetUser = Users(toId(target));
 
 		const amount = Db('money').get(toId(target), 0);
-		let group = user.getIdentity().charAt(0);
+		let group = targetUser.getIdentity().charAt(0);
 		this.sendReplyBox("<font color=#948A88>" + targetUser.group +  "</font><font color=" + color(targetUser.userid) + "><b>" + Tools.escapeHTML(target) + "</b></font> has " + amount + currencyName(amount) + ".");
 	},
 	wallethelp: ["/wallet [user] - Shows the amount of money a user has."],
